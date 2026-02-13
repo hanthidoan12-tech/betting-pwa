@@ -3,31 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BetWin App</title>
+<title>BetWin | Sports Betting App</title>
 
 <link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-512.png">
 <link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#111827">
 
 </head>
 <body>
 
-<section class="hero">
-<h1>BetWin App</h1>
-<p>Get 100% bonus on your first deposit</p>
+<div class="app-container">
 
-<button onclick="scrollToForm()">Register Now</button>
+<header>
+<h1>BetWin</h1>
+</header>
+
+<section class="hero">
+<h2>100% First Deposit Bonus</h2>
+<p>Fast registration • Instant payouts • Secure platform</p>
+<button class="primary-btn" onclick="scrollToForm()">Get Bonus</button>
+<button id="installBtn" class="secondary-btn" style="display:none;">Install App</button>
 </section>
 
 <section class="form-section" id="form">
-<h2>Create Account</h2>
+<h3>Create Account</h3>
 
 <form id="regForm">
 <input type="text" placeholder="Username" required>
 <input type="email" placeholder="Email" required>
 <input type="password" placeholder="Password" required>
-<button type="submit">Register</button>
+<button type="submit" class="primary-btn">Register</button>
 </form>
+
+<div id="loader" class="loader hidden"></div>
+
 </section>
+
+</div>
 
 <script src="script.js"></script>
 </body>
